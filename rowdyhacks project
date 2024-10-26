@@ -1,0 +1,61 @@
+name = str()
+email = str() 
+weight = int() 
+height = int()
+gender = str()
+dietaryRestrictions = str()
+weightGoals = str()
+userInfo = [name, email, weight, height, gender, dietaryRestrictions, weightGoals]
+
+
+while 1:
+    userInput = input("Welcome to NutriFit. Please log in or sign-up\n")
+    if userInput == "sign-up":
+    
+        userInfo[0] = input("Enter Your Name\n")
+          
+        userInfo[1] = input("Enter your email address\n")         
+            
+        userInfo[2] = int(input("Enter your weight\n"))
+        while userInfo[2] > 300:
+            userInfo[2] = int(input("max weight reached, try again\n"))
+            
+        userInfo[3] = int(input("Enter your Height in inches\n"))
+        while userInfo[3] > 96:
+             userInfo[3] = int(input("Max height reached, try again\n"))
+            
+        userInfo[4] = input("Do you have any dietary restrictions?\n")
+        if userInfo[4] == "yes":
+             userInfo[4] = input("List restrictions here:\n")
+        
+           
+        userInfo[5] = input("Do you have any weight goals?\n")
+        if userInfo[5] == "yes":
+             userInfo[5] = input("List weight goals here:\n")
+    
+    
+        userInput = input("Allow access data from Apple health?\n")
+        
+        if userInput == "yes":
+              print("Yay")
+
+        else:
+              print("Boo")
+        
+        continue
+    if userInput == "log in":
+         
+        userInput = input("Enter your first and last name\n")
+        if userInput == userInfo 
+
+
+        
+        
+    break
+        
+
+       
+
+
+
+              
